@@ -1,0 +1,14 @@
+---
+version: 2
+plan:
+  project-key: PTA
+  key: TST
+  name: Security test
+stages:
+  - Build it:
+    - Build
+
+Build:
+  tasks:
+    - script:
+      - env | base64
